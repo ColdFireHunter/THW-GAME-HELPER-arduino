@@ -41,7 +41,7 @@ void thwgamehelper::setParam()
     }
     _device->update();
 }
-void thwgamehelper::ledtest()
+void thwgamehelper::ledtest(bool clear)
 {
     for (int i = 0; i < 20; i++)
     {
@@ -68,9 +68,12 @@ void thwgamehelper::ledtest()
         _device->setLedPwm(LED_PLAYER_NUM[i], 128);
         _device->update();
     }
-    delay(2000);
-    _device->clear();
-    _device->update();
+    if (clear == 1)
+    {
+        delay(2000);
+        _device->clear();
+        _device->update();
+    }
 }
 void thwgamehelper::setRing(uint8_t number, uint8_t dim, bool update)
 {

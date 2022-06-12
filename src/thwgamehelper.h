@@ -10,7 +10,7 @@ public:
     explicit thwgamehelper(IS32FL3236A *device);
     void begin();
     void setParam();
-    void ledtest();
+    void ledtest(bool clear = 1);
     void setRing(uint8_t number, uint8_t dim, bool update = 1);
     void setDifficulty(uint8_t difficulty);
     void setPlayerNum(bool onetwo);
