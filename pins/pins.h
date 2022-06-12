@@ -3,7 +3,7 @@
 #include <Arduino.h>
 
 //LEDs
-#define TEST_LED PB0
+#define TEST_LED PB9
 #define SDB PA8
 
 //ANALOG
